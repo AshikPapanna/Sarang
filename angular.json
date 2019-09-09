@@ -6,7 +6,7 @@
         "Client": {
             "projectType": "application",
             "root": "",
-            "sourceRoot": "src",
+            "sourceRoot": "Client/src",
             "prefix": "as",
             "architect": {
                 "build": {
@@ -15,19 +15,19 @@
                         "progress": true,
                         "extractCss": true,
                         "aot": true,
-                        "outputPath": "dist",
-                        "tsConfig": "tsconfig.json",
-                        "main": "main.ts",
-                        "index": "src/index.html",
-                        "polyfills": "src/polyfills.ts"
+                        "outputPath": "Client/dist",
+                        "tsConfig": "Client/tsconfig.json",
+                        "main": "Client/main.ts",
+                        "index": "/index.html",
+                        "polyfills": "Client/src/polyfills.ts"
                     },
                     "configurations": {
                         "prod": {
                             "aot": true,
                             "fileReplacements": [
                                 {
-                                    "replace": "src/environments/environment.ts",
-                                    "with": "src/environments/environment.prod.ts"
+                                    "replace": "Client/src/environments/environment.ts",
+                                    "with": "Client/src/environments/environment.prod.ts"
                                 }
                             ]
                         }
