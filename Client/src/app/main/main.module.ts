@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MainRoutingModule } from './main-routing.module';
 import { HomeComponent } from './home/home.component';
-import{SignUpService} from '../auth/sign-up/sign-up.service'
+import{AuthService} from '../auth/auth.service'
 
 
 @NgModule({
@@ -12,6 +12,6 @@ import{SignUpService} from '../auth/sign-up/sign-up.service'
     CommonModule,
     MainRoutingModule
   ],
-  providers:[SignUpService]
+  providers:[AuthService]
 })
 export class MainModule { }
